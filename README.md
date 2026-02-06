@@ -1,5 +1,5 @@
 # Playwright QA Automation Portfolio
-
+![Playwright Tests](https://github.com/Yarwood-cmd/playwright-qa-portfolio/workflows/Playwright%20Tests/badge.svg)
 Automated end-to-end test suite demonstrating QA automation skills using Playwright. Created as part of my transition from law enforcement into software quality assurance.
 
 ## 🎯 Purpose
@@ -70,6 +70,15 @@ All tests passing across multiple browsers:
 - ✅ Chromium
 - ✅ Firefox  
 - ✅ WebKit
+
+## 🔄 Continuous Integration
+
+This project uses GitHub Actions for automated testing on every commit. The test suite runs automatically on:
+- Every push to main branch
+- Every pull request
+- Across multiple browsers in a clean Ubuntu environment
+
+[View latest test runs →](https://github.com/Yarwood-cmd/playwright-qa-portfolio/actions)
 
 ## 🎓 Key Learnings
 
