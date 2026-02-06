@@ -34,6 +34,26 @@ This project showcases my ability to:
 
 ## 🚀 Running Tests
 
+## 🐳 Docker Support
+
+Run tests in a containerized environment:
+```bash
+# Build the Docker image
+docker build -t playwright-qa-tests .
+
+# Run tests in container
+docker run playwright-qa-tests
+
+# Run with custom browser
+docker run playwright-qa-tests npx playwright test --project=chromium
+```
+
+**Benefits:**
+- Consistent test environment across different machines
+- Easy CI/CD integration
+- No local Playwright installation required
+- Matches production deployment patterns
+
 ### Install Dependencies
 ```bash
 npm install
