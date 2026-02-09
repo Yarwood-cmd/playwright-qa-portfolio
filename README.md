@@ -27,10 +27,33 @@ This project showcases my ability to:
 ### GitHub Repository Navigation Tests (`tests/github-navigation.spec.js`)
 - ✅ Direct repository navigation
 - ✅ Issues tab navigation
-- ✅ Pull Requests tab navigation  
+- ✅ Pull Requests tab navigation
 - ✅ Issues list page loading
 
-**Total: 7 test scenarios** running across 3 browsers (Chromium, Firefox, WebKit)
+### API, Performance, Responsive & Accessibility Tests (`tests/github-api-and-performance.spec.js`)
+
+**API Testing**
+- ✅ Fetch public repository data via REST API
+- ✅ Validate API response headers
+- ✅ Verify 404 response for non-existent repository
+- ✅ Fetch and validate contributor list with pagination
+
+**Performance Metrics**
+- ✅ Page load time within acceptable threshold
+- ✅ Navigation timing metrics collection (DOM interactive, content loaded, full load)
+- ✅ Console error detection on page load
+
+**Responsive Viewport Testing**
+- ✅ Mobile viewport rendering (375x812)
+- ✅ Tablet viewport rendering (768x1024)
+
+**Accessibility Checks**
+- ✅ Form label associations on login page
+- ✅ Image alt text validation
+- ✅ Main landmark element presence
+- ✅ Heading hierarchy verification
+
+**Total: 20 test scenarios** running across 3 browsers (Chromium, Firefox, WebKit)
 
 ## 🚀 Running Tests
 
@@ -105,6 +128,10 @@ This project uses GitHub Actions for automated testing on every commit. The test
 - **Selector Strategy**: Using role-based and URL-based selectors for stability
 - **Error Handling**: Managing "strict mode violations" when multiple elements match
 - **Cross-Browser Testing**: Ensuring compatibility across different browser engines
+- **API Testing**: Using Playwright's request context for REST API validation
+- **Performance Testing**: Collecting navigation timing metrics and enforcing load time thresholds
+- **Accessibility Testing**: Verifying form labels, alt text, landmarks, and heading hierarchy
+- **Responsive Testing**: Validating rendering across mobile, tablet, and desktop viewports
 - **Maintainability**: Writing clear, documented tests that other QA engineers can understand
 
 ## 💼 Background
